@@ -749,7 +749,7 @@ cache(function(data, match, sendBadge, request) {
     // https://api.ondemand.coverity.com/jobs/p4tmm8031t4i971r0im4s7lckk/badge
     //
 
-    var url = 'https://api.ondemand.coverity.com/' +
+    var url = 'http://localhost:21020/' +
         badgeType + '/' + badgeTypeId + '/badge';
     request(url, function(err, res, buffer) {
       if (err != null) {
